@@ -1,0 +1,23 @@
+# Ignorar el entorno virtual
+.venv/
+
+# Ignorar archivos de configuración del editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignorar archivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar carpetas y archivos de paquetes
+*.egg-info/
+dist/
+build/
+
+# Otros archivos y carpetas que suelen ignorarse
+.DS_Store
+Thumbs.db

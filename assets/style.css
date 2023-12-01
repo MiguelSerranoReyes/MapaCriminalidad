@@ -1,0 +1,53 @@
+.body {
+    display: flex;
+    flex-direction: column; /* Cambio a column */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.h1 {
+    text-align: center;
+    margin: 10px;
+    width: 100%; /* Asegura que el título ocupe todo el ancho */
+}
+
+.graph {
+    width: 80%; 
+    height: 90vh; /* Altura como porcentaje de la altura de la ventana */
+    max-height: calc(100vh - 60px); /* Opcional: ajusta para no superar la altura de la ventana */
+}
+
+.dropdown-estilizado {
+    width: 80vw;  /* Ancho relativo al ancho de la ventana */
+    max-width: 750px;  /* Ancho máximo para grandes pantallas */
+    height: 60px; /* Altura fija */
+    margin: 0 auto;  /* Centrar el elemento */
+    padding: 10px;  /* Espaciado interno */
+    border: 1px solid #ddd;  /* Borde */
+    border-radius: 5px;  /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    /* Otros estilos según necesites */
+}
+
+@media (max-width: 600px) {
+    .h1 {
+        font-size: 20px; /* Reduce el tamaño de la fuente para el título */
+        margin: 5px 0; /* Reducir el margen para ahorrar espacio */
+    }
+
+    .graph {
+        width: 95vw; /* Hacer la gráfica más ancha en pantallas pequeñas */
+        height: 95vh; /* Ajustar la altura para que no sea demasiado alta */
+    }
+
+    .dropdown-estilizado {
+        width: 95vw;  /* Ancho más grande para pantallas pequeñas */
+        font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
+
