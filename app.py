@@ -44,5 +44,5 @@ def update_map(categoria_seleccionada):
 
 # Ejecutar la aplicación
 if __name__ == '__main__':
-    app.run_server(debug=True)
-    #app.run_server(debug=False, host='0.0.0.0', port=80)
+    #app.run_server(debug=True)
+    app.run_server(debug=False, host='0.0.0.0', port=80)
